@@ -1,0 +1,243 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin: 0 16px;
+  max-width: calc(1440rem / 16);
+}
+
+header {
+  padding: 16px 16px 0 16px;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  padding: 36px 16px
+}
+
+header, footer {
+  width: 100%;
+}
+
+header div, footer div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(1440rem / 16);
+  margin: 0 auto;
+}
+
+header img, footer img {
+  width: calc(89rem / 16);
+  object-fit: contain;
+}
+
+button {
+  border: none;
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height);
+  padding: 10px 24px;
+  font-weight: 700;
+  border-radius: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+header button {
+  background-color: var(--dark-blue);
+}
+
+footer button {
+  background-image: linear-gradient(#4851FF, #F02AA6);
+}
+
+.hero-section button {
+  background-image: linear-gradient(#FF6F48,#F02AA6);
+}
+
+.hero-section {
+  padding: 38px 0 46px 0;
+}
+
+h1 {
+  font-size: var(--heading-font-size-l);
+  line-height: var(--heading-line-height-l);
+  font-weight: 800;
+}
+
+.hero-section p {
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height);
+  color: var(--light-gray);
+  margin: 26px 0 24px 0;
+}
+
+.hero-section button {
+  padding: 15px 38px;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+}
+
+.courses-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+  margin-block-end: 80px;
+}
+
+h2 {
+  padding: 28px;
+  background-image: linear-gradient(#FF6F48,#F02AA6);
+  font-size: var(--heading-font-size-s);
+  line-height: var(--heading-line-height-s);
+  color: white;
+  border-radius: 1rem;
+}
+
+article {
+  background-color: white;
+  position: relative;
+  padding: 56px 28px 32px 28px;
+  border-radius: 1rem;
+}
+
+article img {
+  position: absolute;
+  top: -28px;
+}
+
+h3 {
+  font-size: var(--heading-font-size-xs);
+  line-height: var(--heading-line-height-xs);
+  color: var(--dark-blue);
+}
+
+article p {
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height);
+  color: var(--light-gray);
+  margin: 16px 0 24px 0;
+}
+
+article a {
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height);
+  color: var(--pink)
+}
+
+@media (min-width: calc(675rem / 16)) {
+  main {
+    margin: 0 32px;
+  }
+
+  header {
+    padding: 32px 32px 0 32px;
+  }
+
+  footer {
+    padding: 36px 32px;
+  }
+
+  picture {
+    position: absolute;
+    top: -50px;
+    right: -250px;
+    z-index: -999;
+  }
+
+  .hero-section {
+    width: calc(100% - 250px);
+    max-width: calc(380rem / 16);
+    margin-block-end: 186px;
+  }
+
+  .courses-section {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 56px;
+    column-gap: 10px;
+  }
+}
+
+@media (min-width: calc(1024rem / 16)) {
+  main {
+    margin: 0 110px;
+  }
+
+  header {
+    padding: 32px 110px 0 110px;
+  }
+
+  footer {
+    padding: 36px 110px;
+  }
+
+  picture {
+    top: -146px;
+    right: -335px;
+  }
+
+  .hero-section {
+    margin: 178px 0 226px 0;
+  }
+
+  .courses-section {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+    column-gap: 30px;
+  }
+}
+
+@media (min-width: calc(1200rem / 16)) {
+  main {
+    margin: 0 165px;
+  }
+
+  header {
+    padding: 32px 165px 0 165px;
+  }
+
+  footer {
+    padding: 36px 165px;
+  }
+
+  picture {
+    width: 1046px;
+    height: 938px;
+  }
+}
+
+@media (min-width: calc(1770rem / 16)) {
+  picture {
+    top: -146px;
+    left: calc((100% - 1440px) / 2 + 890px);
+    right: unset;
+  }
+}
+
+:root {
+  --light-purple: #666ca3;
+  --dark-blue: #13183f;
+  --light-gray: #83869a;
+  --pink: #f74780;
+  --light-pink: #ffa7c3;
+  --heading-font-size-l: calc(40rem / 16);
+  --heading-line-height-l: calc(51rem / 16);
+  --heading-font-size-m: calc(32rem / 16)
+  --heading-line-height-m: calc(40rem / 16);
+  --heading-font-size-s: calc(24rem / 16);
+  --heading-line-height-s: calc(28rem / 16);
+  --heading-font-size-xs: calc(20rem / 16);
+  --heading-line-height-xs: calc(25rem / 16);
+  --body-font-size-m: calc(18rem / 16);
+  --body-font-size-s: calc(16rem / 16);
+  --body-line-height: calc(28rem / 16);
+}
