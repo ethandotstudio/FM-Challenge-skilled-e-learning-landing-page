@@ -108,6 +108,9 @@ article {
   position: relative;
   padding: 56px 28px 32px 28px;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 article img {
@@ -156,7 +159,7 @@ article a {
 
   .hero-section {
     width: calc(100% - 250px);
-    max-width: calc(380rem / 16);
+    max-width: calc(460rem / 16);
     margin-block-end: 186px;
   }
 
@@ -213,6 +216,11 @@ article a {
     width: 1046px;
     height: 938px;
   }
+
+  h1 {
+    font-size: var(--heading-font-size-xl);
+    line-height: var(--heading-line-height-xl);
+  }
 }
 
 @media (min-width: calc(1770rem / 16)) {
@@ -223,12 +231,20 @@ article a {
   }
 }
 
+@media (pointer: fine) {
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+}
+
 :root {
   --light-purple: #666ca3;
   --dark-blue: #13183f;
   --light-gray: #83869a;
   --pink: #f74780;
   --light-pink: #ffa7c3;
+  --heading-font-size-xl: calc(56rem / 16);
+  --heading-line-height-xl: calc(70rem / 16);
   --heading-font-size-l: calc(40rem / 16);
   --heading-line-height-l: calc(51rem / 16);
   --heading-font-size-m: calc(32rem / 16)
