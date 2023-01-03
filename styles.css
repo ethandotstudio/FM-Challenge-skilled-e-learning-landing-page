@@ -90,6 +90,7 @@ picture {
 .courses-section {
   display: grid;
   grid-template-columns: 1fr;
+
   row-gap: 40px;
   margin-block-end: 80px;
 }
@@ -155,6 +156,8 @@ article a {
     top: -50px;
     right: -250px;
     z-index: -999;
+    width: 600px;
+    height:600px;
   }
 
   .hero-section {
@@ -186,10 +189,16 @@ article a {
   picture {
     top: -146px;
     right: -335px;
+    width: 1046px;
+    height: 938px;
   }
 
   .hero-section {
     margin: 178px 0 226px 0;
+  }
+
+  .hero-section p {
+    max-width: calc(380rem / 16);
   }
 
   .courses-section {
@@ -210,11 +219,6 @@ article a {
 
   footer {
     padding: 36px 165px;
-  }
-
-  picture {
-    width: 1046px;
-    height: 938px;
   }
 
   h1 {
