@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Site](https://ethandotstudio.github.io/FM-Challenge-skilled-e-learning-landing-page/)
+- [Live Site](https://ethandotstudio.github.io/Frontend-Mentor__Skilled-E-Learning-Landing-Page)
 
 ## My process
 
